@@ -107,7 +107,7 @@ export default function App() {
         />
       )}
       <NewsModule />
-      {/* <Swiper /> */}
+      <Swiper />
       <Footer />
     </>
   );

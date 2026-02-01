@@ -527,6 +527,46 @@
   text-align: center;
   color: #000;
 }
+.gallery{
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.swiper-container {
+  width: 100%;
+  padding: 60px 0;
+  overflow: hidden;
+}
+.slide {
+  height: 160px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.swiper-slide {
+  transform: scale(0.6);
+  opacity: 0.25;
+  z-index: 1;
+}
+.swiper-slide-prev,
+.swiper-slide-next {
+  transform: scale(0.85);
+  opacity: 0.6;
+  z-index: 5;
+}
+.swiper-slide-prev + .swiper-slide-active,
+.swiper-slide-active + .swiper-slide-next {
+  z-index: 8;
+}
+.swiper-slide-active {
+  transform: scale(1.4);
+  opacity: 1;
+  z-index: 20;
+}
 .footer {
   width: 100%;
   background-color: #ffb36c;
